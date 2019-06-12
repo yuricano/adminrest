@@ -1,0 +1,527 @@
+.pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-container {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.content-center {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.pagination {
+  display: flex !important;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    color: $deliverit-background;
+    /* 10px 20px */
+    .i-icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      fill: currentColor;
+      margin-top: -0.25em;
+      /* 4px */
+      margin-right: 0.25em;
+      /* 4px */
+    }
+  }
+  &:hover {
+    color: $deliverit-secondary-color;
+  }
+  &:focus,
+  &.has-focus {
+    +label {
+      outline: 1px dotted $deliverit-secondary-color;
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+  }
+}
+
+.box.box-block.bg-white {
+  hr {
+    border-color: $deliverit-background;
+  }
+}
+
+.pad-bt {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Background */
+
+.bg-primary {
+  color: $deliverit-white !important;
+  background-color: #3e70c9 !important;
+}
+
+a.bg-primary {
+  &:focus, &:hover {
+    background-color: #467ee1 !important;
+  }
+}
+
+.bg-secondary {
+  color: $deliverit-white !important;
+  background-color: #888 !important;
+}
+
+a.bg-secondary {
+  &:focus, &:hover {
+    background-color: #999 !important;
+  }
+}
+
+.bg-info {
+  color: $deliverit-white !important;
+  background-color: $deliverit-primary-color !important;
+}
+
+a.bg-info {
+  &:focus, &:hover {
+    background-color: $deliverit-primary-color !important;
+  }
+}
+
+.bg-success {
+  color: $deliverit-white !important;
+  background-color: #43b968 !important;
+}
+
+a.bg-success {
+  &:focus, &:hover {
+    background-color: #4bcb73 !important;
+  }
+}
+
+.bg-warning {
+  color: $deliverit-white !important;
+  background-color: #f59345 !important;
+}
+
+a.bg-warning {
+  &:focus, &:hover {
+    background-color: #fea45c !important;
+  }
+}
+
+.bg-danger {
+  color: $deliverit-white !important;
+  background-color: #f44236 !important;
+}
+
+a.bg-danger {
+  &:focus, &:hover {
+    background-color: #ff574c !important;
+  }
+}
+
+.bg-purple {
+  color: $deliverit-white !important;
+  background-color: #a567e2 !important;
+}
+
+a.bg-purple {
+  &:focus, &:hover {
+    background-color: #b773f9 !important;
+  }
+}
+
+.bg-black {
+  color: $deliverit-white !important;
+  background-color: $deliverit-background !important;
+}
+
+a.bg-black {
+  &:focus, &:hover {
+    background-color: $deliverit-background !important;
+  }
+}
+
+.bg-white {
+  background-color: $deliverit-white !important;
+}
+
+a.bg-white {
+  &:focus, &:hover {
+    background-color: $deliverit-white !important;
+  }
+}
+
+.bg-facebook {
+  color: $deliverit-white !important;
+  background-color: #3b5998 !important;
+}
+
+.bg-twitter {
+  color: $deliverit-white !important;
+  background-color: #00aced !important;
+}
+
+.bg-linkedin {
+  color: $deliverit-white !important;
+  background-color: #007bb6 !important;
+}
+
+.bg-dribbble {
+  color: $deliverit-white !important;
+  background-color: #ea4c89 !important;
+}
+
+.bg-googleplus {
+  color: $deliverit-white !important;
+  background-color: #dd4b39 !important;
+}
+
+.bg-instagram {
+  color: $deliverit-white !important;
+  background-color: #517fa4 !important;
+}
+
+.bg-pinterest {
+  color: $deliverit-white !important;
+  background-color: #cb2027 !important;
+}
+
+.bg-dropbox {
+  color: $deliverit-white !important;
+  background-color: #007ee5 !important;
+}
+
+.bg-flickr {
+  color: $deliverit-white !important;
+  background-color: #ff0084 !important;
+}
+
+.bg-tumblr {
+  color: $deliverit-white !important;
+  background-color: #32506d !important;
+}
+
+.bg-skype {
+  color: $deliverit-white !important;
+  background-color: #00aff0 !important;
+}
+
+.bg-youtube {
+  color: $deliverit-white !important;
+  background-color: #bb0000 !important;
+}
+
+/* Text */
+
+a {
+  &.text-primary, &.text-info, &.text-success, &.text-warning, &.text-daner, &.text-purple, &.text-black, &.text-white, &.text-grey {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.text-primary {
+  color: $deliverit-tertiary-color !important;
+  .underline {
+    border-bottom: 1px solid $deliverit-tertiary-color !important;
+  }
+}
+
+a.text-primary {
+  &:focus, &:hover {
+    color: $deliverit-tertiary-color !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: $deliverit-tertiary-color !important;
+  }
+}
+
+.text-success {
+  color: #43b968 !important;
+  .underline {
+    border-bottom: 1px solid #43b968 !important;
+  }
+}
+
+a.text-success {
+  &:focus, &:hover {
+    color: #85d19d !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: #85d19d !important;
+  }
+}
+
+.text-info {
+  color: $deliverit-primary-color !important;
+  .underline {
+    border-bottom: 1px solid $deliverit-primary-color !important;
+  }
+}
+
+a.text-info {
+  &:focus, &:hover {
+    color: $deliverit-primary-color !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: $deliverit-primary-color !important;
+  }
+}
+
+.text-warning {
+  color: #f59345 !important;
+  .underline {
+    border-bottom: 1px solid #f59345 !important;
+  }
+}
+
+a.text-warning {
+  &:focus, &:hover {
+    color: #f8b986 !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: #f8b986 !important;
+  }
+}
+
+.text-danger {
+  color: $deliverit-secondary-color !important;
+  position: absolute;
+  .underline {
+    border-bottom: 1px solid $deliverit-secondary-color !important;
+  }
+}
+
+a.text-danger {
+  &:focus, &:hover {
+    color: $deliverit-secondary-color !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: $deliverit-secondary-color !important;
+  }
+}
+
+.text-purple {
+  color: #a567e2 !important;
+  .underline {
+    border-bottom: 1px solid #a567e2 !important;
+  }
+}
+
+a.text-purple {
+  &:focus, &:hover {
+    color: #c49cec !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: #c49cec !important;
+  }
+}
+
+.text-black {
+  color: #333 !important;
+  .underline {
+    border-bottom: 1px solid #333 !important;
+  }
+}
+
+a.text-black {
+  &:focus, &:hover {
+    color: #7b7b7b !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: #7b7b7b !important;
+  }
+}
+
+.text-white {
+  color: #fff !important;
+  .underline {
+    border-bottom: 1px solid #fff !important;
+  }
+}
+
+a.text-white {
+  &:focus, &:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+
+.text-grey {
+  color: #999 !important;
+  .underline {
+    border-bottom: 1px solid #999 !important;
+  }
+}
+
+a.text-grey {
+  &:focus, &:hover {
+    color: #aaa !important;
+  }
+  &:focus .underline, &:hover .underline {
+    border-color: #aaa !important;
+  }
+}
+
+.text-pantone {
+  color: #22d3c5 !important;
+  .underline {
+    border-bottom: 1px solid #22d3c5 !important;
+  }
+}
+
+.text-facebook {
+  color: #3b5998 !important;
+}
+
+.text-twitter {
+  color: #00aced !important;
+}
+
+.text-linkedin {
+  color: #007bb6 !important;
+}
+
+.text-dribbble {
+  color: #ea4c89 !important;
+}
+
+.text-googleplus {
+  color: #dd4b39 !important;
+}
+
+.text-instagram {
+  color: #517fa4 !important;
+}
+
+.text-pinterest {
+  color: #cb2027 !important;
+}
+
+.text-dropbox {
+  color: #007ee5 !important;
+}
+
+.text-flickr {
+  color: #ff0084 !important;
+}
+
+.text-tumblr {
+  color: #32506d !important;
+}
+
+.text-skype {
+  color: #00aff0 !important;
+}
+
+.text-youtube {
+  color: #bb0000 !important;
+}
+
+.i-danger {
+  color: $deliverit-secondary-color;
+}
+
+.img-picture {
+  background-image: url("~/assets/images/profile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+.img-hotdeal {
+  background-image: url("~/assets/images/profile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+.img-banner {
+  background-image: url("~/assets/images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%
+}
+
+.input-error .form-control {
+  background-image: -webkit-linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), -webkit-linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+  background-image: -moz-linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), -moz-linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+  background-image: -o-linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), -o-linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+  background-image: linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+  &:focus {
+    background-image: -webkit-linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), -webkit-linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+    background-image: -moz-linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), -moz-linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+    background-image: -o-linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), -o-linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+    background-image: linear-gradient($deliverit-secondary-color, $deliverit-secondary-color), linear-gradient(rgba(234, 90, 69, 0.125), rgba(234, 90, 69, 0.125)) !important;
+    }
+}
+
+
+@media screen and (max-width: 1025px) and (min-width: 426px) {
+  .table-text {
+    font-size: 0.7rem;
+  }
+}
+
+.selected-list .c-btn {
+  box-shadow: none !important;
+}
+
+.c-btn {
+  border: none !important;
+}
+
+.c-token {
+  background: $deliverit-primary-color !important;
+}
+
+
+.pure-checkbox input[type="checkbox"] + label:before {
+  border-color: $deliverit-primary-color !important;
+}
+
+.pure-checkbox input[type="checkbox"]:checked + label:before {
+  animation: borderscale 200ms ease-in;
+  background: $deliverit-primary-color !important;
+}

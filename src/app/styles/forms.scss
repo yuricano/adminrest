@@ -1,0 +1,80 @@
+/*
+<div class="checkboxes">
+	<input [(ngModel)]="a" id="a" type="checkbox" />
+	<label class="background" for="a"></label>
+	<span (click)="a=!a">What turn down adw  1</span>
+</div>
+*/
+@include keyframes(boom) {
+	25% {
+		@include transform(scale(1.25));
+	}
+}
+.checkboxes{
+	label {
+		margin: 0 0 -5px 10px;
+		display: inline-block;
+		position: relative;
+		width: 20px;
+		height: 20px;
+		border: 2px solid rgba(0, 0, 0, 0.3);
+		border-radius: 2px;
+		transition-duration: 0.25s;
+		cursor: pointer;
+		color: rgba(0, 0, 0, 0.1);
+		&:hover {
+			border: 2px solid rgba($deliverit-primary-color,.5);
+		}
+		&:active {
+			transition-duration: 0;
+			-webkit-filter: brightness(0.8);
+		}
+		+ span {
+			cursor: pointer;
+		}
+	}
+
+	input {
+		display: none;
+		&:checked + {
+			label {
+				color: $deliverit-primary-color;
+				@include animation(boom 0.5s ease);
+			}
+			.background {
+				border-color: $deliverit-primary-color;
+				background: $deliverit-primary-color;
+			}
+		}
+		&:disabled + {
+			label {
+				cursor: not-allowed;
+				color: #ccc;
+				@include animation(boom 0.5s ease);
+			}
+			.background {
+				border-color: #ccc;
+				background: #ccc;
+			}
+		}
+	}
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number],
+input[type=date] {
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+  	margin: 0;
+	}
+}
+
+.has-error {
+	background-image: linear-gradient(#c93e3e, #c93e3e), linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)) !important;
+}

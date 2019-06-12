@@ -1,0 +1,74 @@
+/* Card */
+
+.card, .card-img {
+  border-radius: 0;
+}
+
+.card-primary {
+  background-color: #3e70c9;
+  border-color: #3e70c9;
+}
+
+.card-success {
+  background-color: #43b968;
+  border-color: #43b968;
+}
+
+.card-info {
+  background-color: #20b9ae;
+  border-color: #20b9ae;
+}
+
+.card-warning {
+  background-color: #f59345;
+  border-color: #f59345;
+}
+
+.card-danger {
+  background-color: #f44236;
+  border-color: #f44236;
+}
+
+.card-purple {
+  background-color: #a567e2;
+  border-color: #a567e2;
+}
+
+.card-black {
+  background-color: #333;
+  border-color: #333;
+}
+
+.card-outline-primary {
+  border-color: #3e70c9;
+}
+
+.card-outline-secondary {
+  border-color: #ccc;
+}
+
+.card-outline-info {
+  border-color: #20b9ae;
+}
+
+.card-outline-success {
+  border-color: #43b968;
+}
+
+.card-outline-warning {
+  border-color: #f59345;
+}
+
+.card-outline-danger {
+  border-color: #f44236;
+}
+
+.card-outline-purple {
+  background-color: transparent;
+  border-color: #a567e2;
+}
+
+.card-outline-black {
+  background-color: transparent;
+  border-color: #333;
+}

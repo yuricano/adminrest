@@ -1,0 +1,97 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  position: relative;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #bbc2ce;
+  font-family: 'AvenirBook', 'Unna', 'Muli', 'sans-serif';
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'AvenirBold', 'Superior', 'sans-serif' !important;
+}
+
+.wrapper {
+  position: relative;
+  // overflow: hidden;
+  min-height: 100%;
+  background-color: #e8ebf0;
+}
+
+.boxed-wrapper .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1270px;
+}
+
+* {
+  outline: none !important;
+}
+
+a {
+  &:focus, &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+.content-appear > .wrapper {
+  -webkit-transform: rotateY(10deg) translateX(-150px);
+  transform: rotateY(10deg) translateX(-150px);
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+  opacity: 0;
+}
+
+.content-appearing > .wrapper {
+  -webkit-transform: rotateY(0deg) translateX(0);
+  transform: rotateY(0deg) translateX(0);
+  opacity: 1;
+}
+
+.site-overlay {
+  display: none;
+  position: fixed;
+  z-index: 98;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 991px) {
+  .site-sidebar-opened .site-overlay {
+    display: block;
+  }
+}
+
+// Toastt
+
+.toast {
+  background-color: $deliverit-background !important;
+}
+.toast-success {
+  background-color: $deliverit-quaternary-color !important;
+}
+.toast-error {
+  background-color: $deliverit-secondary-color !important;
+}
+.toast-info {
+  background-color: $deliverit-primary-color !important;
+}
+.toast-warning {
+  background-color: $deliverit-warning !important;
+}

@@ -1,0 +1,101 @@
+/* Tag */
+
+.tag {
+  padding: 0.2em 0.4em 0.3em;
+  font-size: 80%;
+  min-width: 20px;
+  border-radius: 0;
+}
+
+.tag-pill {
+  // padding-right: .7em;
+  // padding-left: .7em;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 1rem;
+  border-radius: 10rem;
+}
+
+.tag-default {
+  background-color: #adb7be;
+  &[href] {
+    &:focus, &:hover {
+      background-color: #c6d1d8;
+    }
+  }
+}
+
+.tag-primary {
+  background-color: $deliverit-tertiary-color;
+  &[href] {
+    &:focus, &:hover {
+      background-color: $deliverit-tertiary-color;
+    }
+  }
+}
+
+.tag-success {
+  background-color: $deliverit-quaternary-color;
+  &[href] {
+    &:focus, &:hover {
+      background-color: $deliverit-quaternary-color;
+    }
+  }
+}
+
+.tag-info {
+  background-color: $deliverit-primary-color;
+  &[href] {
+    &:focus, &:hover {
+      background-color: $deliverit-primary-color;
+    }
+  }
+}
+
+.tag-warning {
+  background-color: #f59345;
+  &[href] {
+    &:focus, &:hover {
+      background-color: #fea45c;
+    }
+  }
+}
+
+.tag-danger {
+  background-color: $deliverit-secondary-color;
+  &[href] {
+    &:focus, &:hover {
+      background-color: $deliverit-secondary-color;
+    }
+  }
+}
+
+.tag-purple {
+  background-color: #a567e2;
+  &[href] {
+    &:focus, &:hover {
+      background-color: #a567e2;
+    }
+  }
+}
+
+.tag-black {
+  background-color: $deliverit-background;
+  &[href] {
+    &:focus, &:hover {
+      background-color: $deliverit-background;
+    }
+  }
+}
+
+.tag-green {
+  background-color: #74CC40;
+}
+
+.tag-yellow {
+  background-color: #EDC002;
+}
+
+.tag-red {
+  background-color: #ED3636;
+}

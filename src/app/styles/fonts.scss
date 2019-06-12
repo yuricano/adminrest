@@ -1,0 +1,77 @@
+// Avenir
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+
+@font-face{
+  font-family:"Avenir";
+  src:url("assets/fonts/avenir/Avenir-Regular.eot?#iefix");
+  src:url("assets/fonts/avenir/Avenir-Regular.eot?#iefix") format("eot"),
+      url("assets/fonts/avenir/Avenir-Regular.woff") format("woff"),
+      url("assets/fonts/avenir/Avenir-Regular.ttf") format("truetype"),
+      url("assets/fonts/avenir/Avenir-Regular.svg#Avenir-Regular") format("svg");
+}
+
+@font-face{
+  font-family:"AvenirBold";
+  src:url("assets/fonts/avenir/Avenir-Bold.eot?#iefix");
+  src:url("assets/fonts/avenir/Avenir-Bold.eot?#iefix") format("eot"),
+      url("assets/fonts/avenir/Avenir-Bold.woff") format("woff"),
+      url("assets/fonts/avenir/Avenir-Bold.ttf") format("truetype"),
+      url("assets/fonts/avenir/Avenir-Bold.svg#Avenir-Bold") format("svg");
+}
+
+@font-face{
+font-family:"AvenirBook";
+src:url("assets/fonts/avenir/Avenir-Medium.eot?#iefix");
+src:url("assets/fonts/avenir/Avenir-Medium.eot?#iefix") format("eot"),
+    url("assets/fonts/avenir/Avenir-Medium.woff") format("woff"),
+    url("assets/fonts/avenir/Avenir-Medium.ttf") format("truetype"),
+    url("assets/fonts/avenir/Avenir-Medium.svg#Avenir-Medium") format("svg");
+}
+
+@font-face{
+font-family:"AvenirHeavy";
+src:url("assets/fonts/avenir/Avenir-Heavy.eot?#iefix");
+src:url("assets/fonts/avenir/Avenir-Heavy.eot?#iefix") format("eot"),
+    url("assets/fonts/avenir/Avenir-Heavy.woff") format("woff"),
+    url("assets/fonts/avenir/Avenir-Heavy.ttf") format("truetype"),
+    url("assets/fonts/avenir/Avenir-Heavy.svg#Avenir-Heavy") format("svg");
+}
+
+// Muli
+@font-face{
+  font-family:"Muli";
+  src: url('assets/fonts/muli/Muli-Regular.ttf?-fvbane') format("truetype");
+}
+@font-face{
+  font-family:"MuliBold";
+  src: url('assets/fonts/muli/Muli-Bold.ttf?-fvbane') format("truetype");
+}
+
+// Superior
+@font-face{
+  font-family:"Superior";
+  src: url('assets/fonts/superior/Superior-Regular.woff') format("woff");
+}
+@font-face{
+  font-family:"SuperiorBold";
+  src: url('assets/fonts/superior/Superior-Bold.woff') format("woff");
+}
+
+// Unna
+@font-face{
+  font-family:"Unna";
+  src: url('assets/fonts/unna/Unna-Regular.ttf?-fvbane') format("truetype");
+}
+@font-face{
+  font-family:"UnnaBold";
+  src: url('assets/fonts/unna/Unna-Bold.ttf?-fvbane') format("truetype");
+}
+
+
+
+

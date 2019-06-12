@@ -1,0 +1,131 @@
+/* Progress */
+
+.progress-sm {
+  height: 0.5rem;
+}
+
+.progress-lg {
+  height: 1.5rem;
+}
+
+.progress {
+  &[value] {
+    border-radius: 0;
+    &::-moz-progress-bar, &::-webkit-progress-value {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+  &[value="100"] {
+    &::-moz-progress-bar, &::-webkit-progress-value {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  &[value]::-webkit-progress-bar {
+    border-radius: 0;
+  }
+}
+
+base::-moz-progress-bar, .progress[value] {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 0\0) {
+  .progress {
+    border-radius: 0;
+  }
+  .progress-bar {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .progress[width="100%"] {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.progress-rounded {
+  &[value] {
+    border-radius: 0.25rem;
+    &::-moz-progress-bar, &::-webkit-progress-value {
+      border-bottom-left-radius: 0.25rem;
+      border-top-left-radius: 0.25rem;
+    }
+  }
+  &[value="100"] {
+    &::-moz-progress-bar, &::-webkit-progress-value {
+      border-bottom-right-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+  }
+  &[value]::-webkit-progress-bar {
+    border-radius: 0.25rem;
+  }
+}
+
+base::-moz-progress-bar, .progress-rounded[value] {
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 0\0) {
+  .progress-rounded {
+    border-radius: 0.25rem;
+  }
+  .progress-rounded-bar {
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+  }
+  .progress-rounded[width="100%"] {
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+}
+
+.progress-success[value] {
+  &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill {
+    background-color: #43b968;
+  }
+}
+
+@media screen and (min-width: 0\0) {
+  .progress-success .progress-bar {
+    background-color: #43b968;
+  }
+}
+
+.progress-info[value] {
+  &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill {
+    background-color: #20b9ae;
+  }
+}
+
+@media screen and (min-width: 0\0) {
+  .progress-info .progress-bar {
+    background-color: #20b9ae;
+  }
+}
+
+.progress-warning[value] {
+  &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill {
+    background-color: #f59345;
+  }
+}
+
+@media screen and (min-width: 0\0) {
+  .progress-warning .progress-bar {
+    background-color: #f59345;
+  }
+}
+
+.progress-danger[value] {
+  &::-webkit-progress-value, &::-moz-progress-bar, &::-ms-fill {
+    background-color: #f44236;
+  }
+}
+
+@media screen and (min-width: 0\0) {
+  .progress-danger .progress-bar {
+    background-color: #f44236;
+  }
+}

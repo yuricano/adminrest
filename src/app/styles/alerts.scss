@@ -1,0 +1,130 @@
+/* Alert */
+
+.alert {
+  border-radius: 0;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.alert-success hr, .alert-info hr, .alert-warning hr, .alert-danger hr {
+  border-top-color: rgba(0, 0, 0, 0.125);
+}
+
+.alert-success {
+  color: #43b968;
+  background-color: #d9f1e1;
+  .alert-link {
+    color: #43b968;
+  }
+}
+
+.alert-info {
+  color: #20b9ae;
+  background-color: #c5f1ed;
+  .alert-link {
+    color: #20b9ae;
+  }
+}
+
+.alert-warning {
+  color: #f59345;
+  background-color: #fde9da;
+  .alert-link {
+    color: #f59345;
+  }
+}
+
+.alert-danger {
+  color: #f44236;
+  background-color: #fdd9d7;
+  .alert-link {
+    color: #f44236;
+  }
+}
+
+.alert-success-outline {
+  color: #43b968;
+  background-color: transparent;
+  border-color: #43b968;
+  hr {
+    border-top-color: #43b968;
+  }
+  .alert-link {
+    color: #43b968;
+  }
+}
+
+.alert-info-outline {
+  color: #20b9ae;
+  background-color: transparent;
+  border-color: #20b9ae;
+  hr {
+    border-top-color: #20b9ae;
+  }
+  .alert-link {
+    color: #20b9ae;
+  }
+}
+
+.alert-warning-outline {
+  color: #f59345;
+  background-color: transparent;
+  border-color: #f59345;
+  hr {
+    border-top-color: #f59345;
+  }
+  .alert-link {
+    color: #f59345;
+  }
+}
+
+.alert-danger-outline {
+  color: #f44236;
+  background-color: transparent;
+  border-color: #f44236;
+  hr {
+    border-top-color: #f44236;
+  }
+  .alert-link {
+    color: #f44236;
+  }
+}
+
+.alert-success-fill hr, .alert-info-fill hr, .alert-warning-fill hr, .alert-danger-fill hr {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+.alert-success-fill {
+  color: #fff;
+  background-color: #43b968;
+  border-color: #43b968;
+  .alert-link {
+    color: #fff;
+  }
+}
+
+.alert-info-fill {
+  color: #fff;
+  background-color: #20b9ae;
+  border-color: #20b9ae;
+  .alert-link {
+    color: #fff;
+  }
+}
+
+.alert-warning-fill {
+  color: #fff;
+  background-color: #f59345;
+  border-color: #f59345;
+  .alert-link {
+    color: #fff;
+  }
+}
+
+.alert-danger-fill {
+  color: #fff;
+  background-color: #f44236;
+  border-color: #f44236;
+  .alert-link {
+    color: #fff;
+  }
+}

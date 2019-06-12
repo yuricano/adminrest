@@ -1,0 +1,159 @@
+/* Other */
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.breadcrumb {
+  border-radius: 0;
+  &.no-bg {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+code {
+  color: #f44236;
+  background-color: #f9e5e4;
+}
+
+.close {
+  text-shadow: none;
+}
+
+.custom-control-indicator {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-indicator {
+    background-color: $deliverit-primary-color;
+  }
+  &:focus ~ .custom-control-indicator {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  &:active ~ .custom-control-indicator {
+    background-color: #e5eff2;
+  }
+}
+
+.custom-checkbox {
+  .custom-control-indicator {
+    border-radius: 0;
+    -webkit-background-size: 70% 70%;
+    background-size: 70% 70%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .custom-control-description {
+    margin-left: 0.5rem;
+  }
+}
+
+.custom-select {
+  border-radius: 0;
+  &:focus {
+    border-color: #3e70c9;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.dropdown-item.active {
+  background-color: #3e70c9;
+  &:focus, &:hover {
+    background-color: #3e70c9;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  &:focus {
+    border-color: #ccc;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+}
+
+.input-group-addon {
+  padding: 0.45rem 0.75rem;
+  border-radius: 0;
+}
+
+.img-thumbnail {
+  border-radius: 0;
+}
+
+.mark, mark {
+  background-color: #f9efb8;
+}
+
+.media-left {
+  padding-right: 1rem;
+}
+
+.modal-backdrop {
+  background-color: #333;
+}
+
+.modal-content {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+}
+
+.pagination {
+  border-radius: 0;
+}
+
+.page-link {
+  color: #999;
+  &:focus, &:hover {
+    color: #333;
+    background-color: #eceeef;
+    border-color: #ddd;
+  }
+}
+
+.page-item, .pagination-lg .page-item, .pagination-sm .page-item {
+  font-size: 0.7rem;
+  &:first-child .page-link {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  &:last-child .page-link {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: $deliverit-primary-color;
+  border-color: $deliverit-primary-color;
+  &:focus, &:hover {
+    background-color: $deliverit-primary-color;
+    border-color: $deliverit-primary-color;
+  }
+}
+
+.popover {
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: 33px;
+}
+
+.table-grey-head thead {
+  background-color: #f5f5f5;
+}
+
+.text-muted {
+  color: #999;
+}

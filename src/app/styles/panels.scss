@@ -1,0 +1,14 @@
+@import './variables';
+
+.card.panel-title,
+.card.panel-title .card-header {
+// .panel.panel-title {
+  background-color: $deliverit-background;
+  border: transparent;
+  font-family: 'AvenirBold', 'sans-serif';
+  font-size: 1.25rem;
+  color: #fff;
+}
+.panel.panel-title .panel-body {
+  background-color: #fff;
+}

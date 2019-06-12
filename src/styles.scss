@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+ORDER IS IMPORTANT */
+@import 'app/styles/fonts';
+@import 'app/styles/mixins';
+@import 'app/styles/variables';
+@import 'app/styles/base';
+@import 'app/styles/spinner';
+@import 'app/styles/forms';
+@import 'app/styles/utilities';
+@import 'app/styles/navbars';
+@import 'app/styles/panels';
+
+/* Override Bootstrap */
+@import 'app/styles/buttons';
+@import 'app/styles/alerts';
+@import 'app/styles/cards';
+@import 'app/styles/progress';
+@import 'app/styles/tags';
+@import 'app/styles/tooltips';
+@import 'app/styles/others';
+@import 'app/styles/navs';
+@import 'app/styles/tables';
+
+
+/* Theme SCSS */
+@import 'app/styles/themify-icons';
+@import 'app/styles/core';
